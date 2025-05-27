@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <!-- Logo + Título -->
+  <div class="login-header">
+    <img src="assets/SkeletonApp_logo.png" alt="Logo" class="login-logo" />
+    <h1 class="login-title">Inicio Sesión</h1>
+  </div>
+
+  <!-- Formulario de login -->
+  <div class="login-container">
+    <ion-input
+      type="email"
+      fill="solid"
+      label="Correo Electrónico"
+      labelPlacement="floating"
+      helperText="Ingresa tu correo electrónico"
+      helperTextPlacement="floating"
+      errorText="Correo electrónico inválido"
+    ></ion-input>
+
+    <ion-input
+      type="password"
+      fill="solid"
+      label="Contraseña"
+      labelPlacement="floating"
+      helperText="Ingresa tu contraseña"
+      helperTextPlacement="floating"
+      errorText="Contraseña inválida"
+    ></ion-input>
+
+    <ion-button expand="full" color="dark" class="login-button">
+      Iniciar sesión
+    </ion-button>
+
+    <div class="login-links">
+      <ion-text>
+        <a href="#">¿Olvidaste tu contraseña?</a>
+      </ion-text>
+      <ion-text>
+        <a href="#">¿No tienes cuenta? Regístrate</a>
+      </ion-text>
+    </div>
+  </div>
+</ion-content>
